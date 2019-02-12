@@ -6,7 +6,7 @@ The new PEM file created below will be placed into %PROGRAMFILES%\Thycotic Softw
 
 ## Example Localhost.pfx
 
-The Examples folder contains a test localhost.pfx. This PFX is strictly for testing TLS on a single machine. **You have to import in the Personal/Certificates certificate store** since it is not a valid certificate issued by a CA and is not trusted. Any connections made to RabbitMQ when this certificate is used will otherwise fail.
+The Examples folder contains a test localhost.pfx. This PFX is strictly for testing TLS on a single machine. **You have to import in the Personal/Certificates certificate store** since it is not a valid certificate issued by a CA and is not trusted. Any connections made to RabbitMQ when this certificate is used will otherwise fail. The password for this example file is 'password1'.
 
 ```powershell
 $path = "$env:programfiles\Thycotic Software Ltd\RabbitMq Helper\Examples";
