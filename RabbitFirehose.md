@@ -10,7 +10,7 @@ rabbitmqctl trace_on
 rabbitmq-service stop
 rabbitmq-service start
 ```
-![CommandLine](images/CommandLinePicture.PNG "CommandLine")
+![CommandLine](images/LogFiles.png "CommandLine")
 
 ### More Steps
 Log into the management console
@@ -20,23 +20,23 @@ Enter a name
 Username and Password can be blank
 Leaving pattern as # will trace all messages. Specifying ‘deliver.[queue name]’ will show messages going into a particular queue
 
-![Tracing](images/Tracing.PNG "Tracing")
+![Tracing](images/Tracing.png "Tracing")
 
 Click ‘Add Trace’
 
-![AddTrace](images/AddTrace.PNG "AddTrace")
+![AddTrace](images/AddTrace.png "AddTrace")
 
 Logs will be accumulated at [systemdriveletter]:/var/tmp/rabbitmq-tracing
 
-![Logs](images/LogFiles.PNG "Logs")
+![Logs](images/LogFiles.png "Logs")
 
 This is an excerpt of a trace of a message publish.
 
-![Publish](images/MessagePublished.PNG "Publish")
+![Publish](images/MessagePublished.png "Publish")
 
 The Connection field shows where the message originated from. The IP address on the right is the address of the Rabbit. The user is the user who published the message.
 
-![Received](images/MessageReceived.PNG "Received")
+![Received](images/MessageReceived.png "Received")
 
 This entry shows the message being consumed. The payload is the same as the one above. The IP address shows the IP address of the machine doing the consuming. Some configuration may be necessary to get the IP address of machines if load balancers are involved.
 
